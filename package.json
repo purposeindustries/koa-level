@@ -1,0 +1,32 @@
+{
+  "name": "koa-level",
+  "version": "0.0.1",
+  "description": "LevelDB session storage for koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/purposeindustries/koa-level"
+  },
+  "keywords": [
+    "koa",
+    "leveldb",
+    "session",
+    "middleware"
+  ],
+  "contributors": [{
+    "name": "Bence Dányi",
+    "email": "bd@purposeindustries.co"
+  }],
+  "author": "Purpose Industries <dev@purposeindustries.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purposeindustries/koa-level/issues"
+  },
+  "homepage": "https://github.com/purposeindustries/koa-level",
+  "dependencies": {
+    "co-level": "^1.0.1"
+  }
+}
