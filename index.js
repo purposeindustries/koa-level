@@ -25,4 +25,6 @@ LevelStore.prototype.destroy = function* destroy(sid) {
   yield* this.db.del(sid);
 };
 
-module.exports = LevelStore;
+module.exports = function(opts) {
+  return new LevelStore(opts);
+};
