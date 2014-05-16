@@ -9,20 +9,20 @@ function LevelStore(options) {
 }
 
 LevelStore.prototype.get = function* get(sid) {
-  return yield* this.db.get(sid, {
+  return yield this.db.get(sid, {
     valueEncoding: 'json'
   });
 };
 
 LevelStore.prototype.set = function* set(sid, sess, ttl) {
-  yield* this.db.set(sid, sess, {
+  yield this.db.put(sid, sess, {
     valueEncoding: 'json',
     ttl: ttl
   });
 };
 
 LevelStore.prototype.destroy = function* destroy(sid) {
-  yield* this.db.del(sid);
+  yield this.db.del(sid);
 };
 
 module.exports = function(opts) {
