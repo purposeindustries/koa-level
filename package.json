@@ -1,6 +1,6 @@
 {
   "name": "koa-level",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LevelDB session storage for koa",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,12 @@
     "session",
     "middleware"
   ],
-  "contributors": [{
-    "name": "Bence Dányi",
-    "email": "bd@purposeindustries.co"
-  }],
+  "contributors": [
+    {
+      "name": "Bence Dányi",
+      "email": "bd@purposeindustries.co"
+    }
+  ],
   "author": "Purpose Industries <dev@purposeindustries.co>",
   "license": "MIT",
   "bugs": {
