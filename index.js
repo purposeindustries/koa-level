@@ -5,7 +5,7 @@ function LevelStore(options) {
   if(!options.db) {
     throw new Error('Please provide a `db`!');
   }
-  this.db = options.db;
+  this.db = wrap(options.db);
 }
 
 LevelStore.prototype.get = function* get(sid) {
