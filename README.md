@@ -1,6 +1,6 @@
 # koa-level
 
-Session storage for [koa-sess](https://github.com/koajs/koa-session).
+Session storage for [koa-generic-session](https://github.com/koajs/generic-session).
 
 ## Install
 
@@ -37,7 +37,7 @@ app.listen(3000);
 
 ### store(opts)
 
-Create [koa-sess](https://github.com/koajs/koa-session) compatilbe storage from
+Create [koa-generic-session](https://github.com/koajs/generic-session) compatilbe storage from
 `opts.db`.
 
 ## Complex stuff

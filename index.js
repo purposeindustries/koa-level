@@ -9,9 +9,16 @@ function LevelStore(options) {
 }
 
 LevelStore.prototype.get = function* get(sid) {
-  return yield this.db.get(sid, {
-    valueEncoding: 'json'
-  });
+  try {
+    return yield this.db.get(sid, {
+      valueEncoding: 'json'
+    });
+  } catch(err) {
+    if(err.notFound) {
+      return null;
+    }
+    throw err;
+  }
 };
 
 LevelStore.prototype.set = function* set(sid, sess, ttl) {
