@@ -1,6 +1,6 @@
 {
   "name": "koa-level",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "LevelDB session storage for koa",
   "main": "index.js",
   "scripts": {
